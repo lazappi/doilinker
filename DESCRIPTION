@@ -30,3 +30,5 @@ Suggests:
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 Language: en-AU
+URL: https://github.com/lazappi/doilinker
+BugReports: https://github.com/lazappi/doilinker/issues
