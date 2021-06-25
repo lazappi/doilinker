@@ -1,6 +1,8 @@
 # doilinker
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/lazappi/doilinker/workflows/R-CMD-check/badge.svg)](https://github.com/lazappi/doilinker/actions)
+[![Codecov test coverage](https://codecov.io/gh/lazappi/doilinker/branch/main/graph/badge.svg)](https://codecov.io/gh/lazappi/doilinker?branch=main)
 <!-- badges: end -->
 
 **{doilinker}** allows you to link related DOIs.
