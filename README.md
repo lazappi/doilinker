@@ -9,6 +9,8 @@
 Usually this is to find the published version of a preprint (or the reverse).
 It does this by querying the Crossref database using **{rcrossref}** and matching DOIs using the method described by Cabanac, Oikonomidi and Boutron (see citation below).
 
+Documentation for the package can be viewed at http://lazappi.github.io/doilinker.
+
 ## Installation
 
 The package can be installed from GitHub:
@@ -24,7 +26,8 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(doilinker)
-## basic example code
+
+search_doi_links("10.1101/133173")
 ```
 
 ## Code of Conduct
