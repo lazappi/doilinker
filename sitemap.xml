@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://lazappi.github.io/doilinker/index.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/calc_jaccard_similarity.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/doilinker-package.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/get_cr_authors_str.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/get_first_orcid.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/is_doi_preprint.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/is_result_match.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/same_first_author.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/reference/search_doi_links.html</loc>
+  </url>
+  <url>
+    <loc>http://lazappi.github.io/doilinker/articles/doilinker.html</loc>
+  </url>
+</urlset>
