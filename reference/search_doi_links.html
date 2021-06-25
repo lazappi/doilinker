@@ -169,7 +169,38 @@ as well as preprints to publications.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>search_doi_links</span><span class='op'>(</span><span class='st'>"10.1101/133173"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>Retrieving query data from Crossref...</span></div><div class='output co'>#&gt; <span class='warning'>Warning: 503 (server error): /works/10.1101/133173 - NA</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Unknown or uninitialised column: `title`.</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Unknown or uninitialised column: `author`.</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Unknown or uninitialised column: `issued`.</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Unknown or uninitialised column: `author`.</span></div><div class='output co'>#&gt; <span class='message'>Decided query is a preprint</span></div><div class='output co'>#&gt; <span class='message'>Retrieving results data from Crossref...</span></div><div class='output co'>#&gt; <span class='warning'>Warning: 503 (server error): /works - NA</span></div><div class='output co'>#&gt; <span class='message'>Found  results</span></div><div class='output co'>#&gt; <span class='message'>Checking results for matches...</span></div><div class='output co'>#&gt; <span class='warning'>Warning: first element used of 'length.out' argument</span></div><div class='output co'>#&gt; <span class='error'>Error in seq_len(nrow(results)): argument must be coercible to non-negative integer</span></div></pre>
+</div><div class='output co'>#&gt; <span class='message'>Retrieving query data from Crossref...</span></div><div class='output co'>#&gt; <span class='message'>Decided query is a preprint</span></div><div class='output co'>#&gt; <span class='message'>Retrieving results data from Crossref...</span></div><div class='output co'>#&gt; <span class='message'>Found 20 results</span></div><div class='output co'>#&gt; <span class='message'>Checking results for matches...</span></div><div class='output co'>#&gt; <span class='message'>Done!</span></div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 20 x 40</span>
+#&gt;    alternative.id  container.title             created deposited published.print
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>           <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                       <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>          
+#&gt; <span style='color: #BCBCBC;'> 1</span> 1305            Genome Biology              2017-0… 2020-10-… 2017-12        
+#&gt; <span style='color: #BCBCBC;'> 2</span> <span style='color: #BB0000;'>NA</span>              PLOS Computational Biology  2018-0… 2019-10-… <span style='color: #BB0000;'>NA</span>             
+#&gt; <span style='color: #BCBCBC;'> 3</span> 2388            Genome Biology              2021-0… 2021-06-… 2021-12        
+#&gt; <span style='color: #BCBCBC;'> 4</span> <span style='color: #BB0000;'>NA</span>              Development                 2019-0… 2021-04-… 2019-07-01     
+#&gt; <span style='color: #BCBCBC;'> 5</span> <span style='color: #BB0000;'>NA</span>              Development                 2019-0… 2021-05-… <span style='color: #BB0000;'>NA</span>             
+#&gt; <span style='color: #BCBCBC;'> 6</span> <span style='color: #BB0000;'>NA</span>              Methods in Molecular Biolo… 2019-0… 2019-05-… 2019           
+#&gt; <span style='color: #BCBCBC;'> 7</span> <span style='color: #BB0000;'>NA</span>              F1000Research               2020-0… 2020-06-… <span style='color: #BB0000;'>NA</span>             
+#&gt; <span style='color: #BCBCBC;'> 8</span> 615             Genome Medicine             2019-0… 2020-11-… 2019-12        
+#&gt; <span style='color: #BCBCBC;'> 9</span> 1688            Genome Biology              2019-0… 2020-04-… 2019-12        
+#&gt; <span style='color: #BCBCBC;'>10</span> 10.1002/cpcb.86 Current Protocols in Cell … 2019-0… 2020-02-… 2019-06        
+#&gt; <span style='color: #BCBCBC;'>11</span> <span style='color: #BB0000;'>NA</span>              GigaScience                 2018-0… 2019-10-… 2018-05-01     
+#&gt; <span style='color: #BCBCBC;'>12</span> <span style='color: #BB0000;'>NA</span>              Bioinformatics              2021-0… 2021-06-… <span style='color: #BB0000;'>NA</span>             
+#&gt; <span style='color: #BCBCBC;'>13</span> 7540            Nature Communications       2018-1… 2019-11-… 2018-12        
+#&gt; <span style='color: #BCBCBC;'>14</span> 2071            Genome Biology              2020-0… 2020-07-… 2020-12        
+#&gt; <span style='color: #BCBCBC;'>15</span> 1935            Genome Biology              2020-0… 2021-02-… 2020-12        
+#&gt; <span style='color: #BCBCBC;'>16</span> 10.7554/eLife.… eLife                       2019-0… 2020-05-… <span style='color: #BB0000;'>NA</span>             
+#&gt; <span style='color: #BCBCBC;'>17</span> <span style='color: #BB0000;'>NA</span>              Development                 2019-0… 2021-04-… 2019-03-01     
+#&gt; <span style='color: #BCBCBC;'>18</span> 1303            Genome Biology              2017-0… 2017-08-… 2017-12        
+#&gt; <span style='color: #BCBCBC;'>19</span> 1284            Genome Biology              2017-0… 2020-10-… 2017-12        
+#&gt; <span style='color: #BCBCBC;'>20</span> <span style='color: #BB0000;'>NA</span>              GigaScience                 2018-0… 2019-10-… 2018-07-01     
+#&gt; <span style='color: #949494;'># … with 35 more variables: published.online &lt;chr&gt;, doi &lt;chr&gt;, indexed &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   issn &lt;chr&gt;, issue &lt;chr&gt;, issued &lt;chr&gt;, member &lt;chr&gt;, prefix &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   publisher &lt;chr&gt;, score &lt;chr&gt;, source &lt;chr&gt;, reference.count &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   references.count &lt;chr&gt;, is.referenced.by.count &lt;chr&gt;, title &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   type &lt;chr&gt;, update.policy &lt;chr&gt;, url &lt;chr&gt;, volume &lt;chr&gt;, language &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   short.container.title &lt;chr&gt;, author &lt;list&gt;, link &lt;list&gt;,</span>
+#&gt; <span style='color: #949494;'>#   content_domain &lt;list&gt;, reference &lt;list&gt;, page &lt;chr&gt;, subject &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   funder &lt;list&gt;, update_to &lt;list&gt;, license &lt;list&gt;, abstract &lt;chr&gt;,</span>
+#&gt; <span style='color: #949494;'>#   assertion &lt;list&gt;, isbn &lt;chr&gt;, archive &lt;chr&gt;, match &lt;lgl&gt;</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

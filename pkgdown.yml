@@ -3,7 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   doilinker: doilinker.html
-last_built: 2021-06-25T10:30Z
+last_built: 2021-06-25T10:36Z
 urls:
   reference: http://lazappi.github.io/doilinker/reference
   article: http://lazappi.github.io/doilinker/articles
