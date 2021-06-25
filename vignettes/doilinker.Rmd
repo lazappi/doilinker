@@ -1,0 +1,80 @@
+---
+title: "doilinker"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{doilinker}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+Ever wondered if your favourite preprint has been published or wanted to link a publication and a preprint for some reason?
+Then **{doilinker}** can help!
+It implements a method developed by Cabanac, Oikonomidi and Boutron to match preprints and publications using information retrieved from Crossref.
+
+# Installation
+
+The package can be installed from GitHub:
+
+```{r install, eval = FALSE}
+# install.packages("remotes")
+remotes::install_github("lazappi/doilinker")
+```
+
+# Usage
+
+First load the package.
+
+```{r setup}
+library(doilinker)
+```
+
+Then we can search for linked references.
+
+```{r search}
+results <- search_doi_links("10.1101/133173")
+head(results)
+```
+
+The results contain information retrieved from Crossref.
+Most of the columns are self-explanatory but a few to be aware of are:
+
+* `score` - The query score returned by Crossref.
+  Not used for matching but can be useful to check.
+* `match` - Whether each result is a match according to the Cabanac, Oikonomidi and Boutron method
+
+Please refer to the Crossref documentation for more details on the other fields.
+
+## Parameters
+
+By default all results from Crossref are returned but you can filter to only
+matches by setting `filter_matches = TRUE`.
+You can also change the number of results returned by setting the `limit` parameter.
+
+## Citation
+
+If you use this package please cite the original publication for the linking method
+(if you want to cite the package directly as well that would be great 😉 but crediting the original authors is the important part):
+
+> Cabanac G, Oikonomidi T, Boutron I. "Day-to-day discovery of preprint-publication links." **Scientometrics**. 2021;1–20. DOI: [10.1007/s11192-021-03900-7](https://doi.org/10.1007/s11192-021-03900-7)
+>
+
+```bibtex
+@ARTICLE{Cabanac2021-ge,
+  title    = "Day-to-day discovery of preprint-publication links",
+  author   = "Cabanac, Guillaume and Oikonomidi, Theodora and Boutron, Isabelle",
+  journal  = "Scientometrics",
+  pages    = "1--20",
+  month    =  apr,
+  year     =  2021,
+  language = "en"
+}
+```

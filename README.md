@@ -9,10 +9,11 @@ It does this by querying the Crossref database using **{rcrossref}** and matchin
 
 ## Installation
 
-You can install the released version of doilinker from [CRAN](https://CRAN.R-project.org) with:
+The package can be installed from GitHub:
 
-``` r
-install.packages("doilinker")
+```r
+# install.packages("remotes")
+remotes::install_github("lazappi/doilinker")
 ```
 
 ## Example
