@@ -1,0 +1,5 @@
+title: doilinker
+url: http://lazappi.github.io/doilinker
+template:
+  params:
+    bootswatch: cosmo
