@@ -1,6 +1,7 @@
 Package: doilinker
 Title: Link Preprints And Publications By DOI 
 Version: 0.1.0
+Date: 2021-06-25
 Authors@R: 
     person(given = "Luke",
            family = "Zappia",
@@ -30,6 +31,6 @@ Suggests:
     covr
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-Language: en-AU
+Language: en-GB
 URL: https://github.com/lazappi/doilinker
 BugReports: https://github.com/lazappi/doilinker/issues
