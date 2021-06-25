@@ -39,3 +39,6 @@ code from https://github.com/gcabanac/preprint-publication-linker. Query
 filters have been modified to allow reverse linking publications to preprints
 as well as preprints to publications.
 }
+\examples{
+search_doi_links("10.1101/133173")
+}

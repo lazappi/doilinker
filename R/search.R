@@ -22,6 +22,7 @@
 #' @export
 #'
 #' @examples
+#' search_doi_links("10.1101/133173")
 search_doi_links <- function(doi, preprint = NULL, limit = 20,
                              filter_matches = FALSE, verbose = TRUE) {
 
